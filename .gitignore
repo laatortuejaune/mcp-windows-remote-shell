@@ -1,0 +1,37 @@
+# build outputs
+agent/dist/
+agent/relay-agent
+mcp-server/dist/
+mcp-server/node_modules/
+.wrangler/
+
+# secrets - never commit credentials
+*.token
+token
+.env
+
+# misc
+*.log
+.DS_Store
+target-windows/rendezvous.json
+target-windows/.relay-session/
+target-windows/*.exe
+
+# operator state and temporary downloads
+operator.json
+target-windows/*.download
+
+# local deployment settings and publication artifacts
+*.local.json
+*.local.jsonc
+.dev.vars*
+.env.*
+secrets*.json
+release/
+# Generated private configuration, wherever an operator exports it
+rendezvous.json
+worker-secrets.json
+mcp-config.json
+.relay-session/
+__pycache__/
+*.pyc

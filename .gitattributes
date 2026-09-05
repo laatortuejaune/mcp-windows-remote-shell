@@ -1,0 +1,2 @@
+target-windows/*.ps1 text eol=crlf
+target-windows/*.cmd text eol=crlf

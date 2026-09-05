@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "relay-rendezvous",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [{ "name": "MAILBOX", "class_name": "SessionMailbox" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SessionMailbox"] }],
+  "observability": { "enabled": true }
+}

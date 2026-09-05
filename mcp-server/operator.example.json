@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "rendezvous_url": "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev",
+  "provision_key": "REPLACE_WITH_64_RANDOM_HEXADECIMAL_CHARACTERS",
+  "package": {
+    "directory": "/ABSOLUTE/PATH/TO/exports/relay-package",
+    "source_directory": "/ABSOLUTE/PATH/TO/mcp-windows-remote-shell/target-windows"
+  }
+}
